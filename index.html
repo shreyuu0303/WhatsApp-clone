@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Clone Mobile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar / Contacts -->
+    <div class="sidebar">
+      <h2>Contacts</h2>
+      <ul id="contacts">
+        <li class="contact active" data-name="Alice">
+          <img src="https://i.pravatar.cc/40?img=1" class="avatar" />
+          <span class="name">Alice</span>
+        </li>
+        <li class="contact" data-name="Bob">
+          <img src="https://i.pravatar.cc/40?img=2" class="avatar" />
+          <span class="name">Bob</span>
+        </li>
+        <li class="contact" data-name="Charlie">
+          <img src="https://i.pravatar.cc/40?img=3" class="avatar" />
+          <span class="name">Charlie</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <img id="chat-avatar" src="https://i.pravatar.cc/40?img=1" class="avatar" />
+        <h3 id="chat-with">Alice</h3>
+      </div>
+
+      <div class="chat-messages" id="chat-messages"></div>
+
+      <!-- Typing indicator -->
+      <div class="typing-indicator" id="typing-indicator">...</div>
+
+      <!-- Input area -->
+      <div class="chat-input">
+        <button id="emoji-btn">😊</button>
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <button id="send-btn">Send</button>
+      </div>
+
+      <!-- Emoji picker -->
+      <div id="emoji-picker" class="hidden">
+        <span>😀</span><span>😂</span><span>😍</span><span>😎</span><span>👍</span><span>❤️</span>
+        <span>😢</span><span>😡</span><span>🤔</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
